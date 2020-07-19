@@ -9,7 +9,8 @@ In this guide we will set up clean Debian server for Python and Django projects.
 Connect through SSH to remote Debian server and update repositories and install some initial needed packages:
 
 ```
-sudo apt-get update ; \
+apt-get update
+apt-get install sudo
 sudo apt-get install -y vim mosh tmux htop git curl wget unzip zip gcc build-essential make
 ```
 
@@ -32,7 +33,7 @@ sudo passwd www
 ## Init — must-have packages & ZSH
 
 ```
-sudo apt-get install -y zsh tree redis-server nginx  libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-dev python-imaging python3-lxml libxslt-dev python-libxml2 python-libxslt1 libffi-dev libssl-dev python-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
+sudo apt-get install -y zsh tree redis-server nginx  libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-dev python3-lxml libxslt-dev python-libxml2 python-libxslt1 libffi-dev libssl-dev python-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
 ```
 
 Install [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh):

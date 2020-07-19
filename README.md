@@ -43,13 +43,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 chsh -s $(which zsh)
 ```
 
-Configure some needed aliases:
-
-```
-vim ~/.zshrc
-    alias cls="clear"
-```
-
 ## Install python 3.7
 
 mkdir ~/code

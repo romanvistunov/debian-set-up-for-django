@@ -65,6 +65,18 @@ Now python3.7 in `/home/www/.python/bin/python3.7`. Update pip:
 sudo /home/www/.python/bin/python3.7 -m pip install -U pip
 ```
 
+Next step
+
+```
+mkdir project
+python3 -m pip install -U pip
+sudo apt-get install python3-pip
+python3 -m venv env
+apt-get install python3-venv
+. ./env/bin/activate
+pip install Django
+```
+
 Ok, now we can pull our project from Git repository (or create own), create and activate Python virtual environment:
 
 ```

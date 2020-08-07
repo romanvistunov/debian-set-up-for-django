@@ -184,8 +184,9 @@ vim project/supervisor.salesbeat.conf
 	redirect_stderr=true
 ```
 
-If you need some Gunicorn example config — welcome:
 
+Nginx config /sites-enabled/default
+```
 server {
   listen 80 default_server;
   listen [::]:80 default_server;
@@ -203,7 +204,9 @@ server {
 }
 }
 
+```
 
+If you need some Gunicorn example config — welcome:
 
 ```
 command = '/home/www/code/project/env/bin/gunicorn'

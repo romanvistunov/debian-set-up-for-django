@@ -174,7 +174,7 @@ vim /home/www/code/project/bin/start_gunicorn.sh
 chmod +x /home/www/code/project/bin/start_gunicorn.sh
 
 nano /etc/supervisor/conf.d/PROJECTNAME.conf
-	[program:www_gunicorn]
+	[program:gunicorn]
 	command=/home/www/code/project/bin/start_gunicorn.sh
 	user=www
 	process_name=%(program_name)s

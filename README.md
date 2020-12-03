@@ -198,10 +198,6 @@ server {
   add_header P3P 'CP="ALL DSP COR PSAa PSDa OUR NOR ONL UNI COM NAV"';
   add_header Access-Control-Allow-Origin *;
   }
-  location /static/ {
-  root /home/web/servicedocs/servicedocs/servicedocs/;
-  expires 30d;
-}
 }
 
 ```

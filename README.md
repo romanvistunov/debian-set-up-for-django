@@ -173,7 +173,7 @@ vim /home/www/code/project/bin/start_gunicorn.sh
 
 chmod +x /home/www/code/project/bin/start_gunicorn.sh
 
-vim project/supervisor.salesbeat.conf
+nano /etc/supervisor/conf.d/PROJECTNAME.conf
 	[program:www_gunicorn]
 	command=/home/www/code/project/bin/start_gunicorn.sh
 	user=www

@@ -178,7 +178,7 @@ nano /etc/supervisor/conf.d/PROJECTNAME.conf
 	command=/home/www/code/project/bin/start_gunicorn.sh
 	user=www
 	process_name=%(program_name)s
-	numprocs=1
+	numproc=1
 	autostart=true
 	autorestart=true
 	redirect_stderr=true

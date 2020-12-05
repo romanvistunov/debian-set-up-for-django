@@ -158,6 +158,35 @@ Run SQL dump, if you have:
 psql -h localhost dbms_db dbms  < dump.sql
 ```
 
+Change settings.py:
+
+```
+DATABASES = {
+'default': {
+'ENGINE': 'django.db.backends.postgresql_psycopg2',
+'NAME': 'dbname',
+'USER': 'username',
+'PASSWORD': 'userpass',
+'HOST': '127.0.0.1',
+'PORT': '5432'
+}
+}
+```
+
+Install psycopg2:
+
+```
+pip install psycopg2-binary
+```
+
+Make migrations and create superuser:
+
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+```
+
 ## Install and configure supervisor
 
 Now recommended way is using Systemd instead of supervisor. If you need supervisor — welcome:
